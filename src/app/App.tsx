@@ -1,9 +1,15 @@
-import HomeController from "./controller/HomeController";
+import { BrowserRouter } from "react-router-dom";
+import { AppRouter } from "./AppRouter";
+import HomeContextProvider from "./context/HomeContext";
 
 function App() {
   return (
     <>
-      <HomeController />
+      <BrowserRouter>
+          <HomeContextProvider>
+          <AppRouter />
+          </HomeContextProvider>
+      </BrowserRouter>
     </>
   );
 }

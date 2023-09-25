@@ -1,4 +1,3 @@
-import { ModelError } from "../helpers/errors/model_error";
 
 export class Student {
   name: string;
@@ -10,12 +9,14 @@ export class Student {
 
     this.name = name;
 
-    if(ra < 10000000){
-        throw new ModelError('ra');
-    }
     this.ra = ra;
 
     this.year = year;
+    
     this.isWorking = isWorking;
+  }
+
+  static empty(){
+    return new Student("", 0, 0, false);
   }
 }
