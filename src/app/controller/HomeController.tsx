@@ -8,7 +8,7 @@ export default function HomeController(){
 
     if(randomNumber <= 2){
         return (<Home student={
-            new Student('João', 22003703, 2021, true)
+            new Student('Fabio', 22003703, 2021, true)
         } />);
     } else {
         return <NotFound />
