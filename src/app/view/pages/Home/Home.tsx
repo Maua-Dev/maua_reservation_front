@@ -3,7 +3,7 @@ import { Student } from "../../../model/student";
 import Button from "../../components/Button/Button";
 import "./Home.css";
 import NotFound from "../NotFound/NotFound";
-import { HomeContext } from "../../../context/HomeContext";
+import { HomeContext } from "../../../context/home_context";
 ``;
 export default function Home() {
   const { student, setStudent, index, setIndex } = useContext(HomeContext)!;
