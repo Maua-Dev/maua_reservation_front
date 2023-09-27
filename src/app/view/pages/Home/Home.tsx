@@ -19,7 +19,7 @@ export default function Home() {
         <div>
           <h1>{student.name}</h1>
           <p>{student.ra}</p>
-          <p>O aluno está trabalhando? {student.isWorking ? "SIM" : "NÃO"}</p>
+          <p>Enrico  {student.isWorking ? "SIM" : "NÃO"}</p>
           <Button
             buttonTitle="Entrar"
             handleClick={() => setIndex(index + 1)}
